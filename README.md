@@ -10,11 +10,8 @@ install mysql
 
 ### run test
 ```bash
-$ cd $GOPATH/src/go-api-twodb/models
-$ go test -v
-
-$ cd $GOPATH/src/go-api-twodb/controllers
-$ go test -v
+$ cd $GOPATH/src/go-api-twodb
+$ go test -p 1 -count 1 -v ./...
 ```
 
 ### run
