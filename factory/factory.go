@@ -11,7 +11,7 @@ import (
 
 const ContextDBName echomiddleware.ContextDBType = "ContextDBName-GO-API"
 
-func DB(ctx context.Context) xorm.Interface {
+func DB2(ctx context.Context) xorm.Interface {
 	v := ctx.Value(ContextDBName)
 	if v == nil {
 		panic("DB is not exist")
@@ -22,7 +22,7 @@ func DB(ctx context.Context) xorm.Interface {
 	panic("DB is not exist")
 }
 
-func DB2(ctx context.Context) xorm.Interface {
+func DB(ctx context.Context) xorm.Interface {
 	v := ctx.Value(echomiddleware.ContextDBName)
 	if v == nil {
 		panic("DB is not exist")
